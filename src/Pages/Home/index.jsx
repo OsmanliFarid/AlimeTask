@@ -218,8 +218,6 @@ const Home = () => {
     const newData = LinkArr.find((item) => item.id === id);
     if (newData && newData.ImageArr) {
       SetActive(newData.ImageArr);
-    } else {
-      SetActive([]);
     }
   };
   return (
