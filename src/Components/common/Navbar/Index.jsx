@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Header from "../../Header";
+import { IoSearchOutline } from "react-icons/io5";
 
 const Navbar = () => {
   let NavbarArr = [
@@ -13,32 +15,36 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="bg-black">
-        <div className="max-w-[85vw] m-[auto]">
-          <div className="grid grid-cols-3 items-center h-[70px]  p-[0px_10px]">
+      <div className="bg-[rgba(0,0,0,0.2)]">
+        <div className="max-w-[75vw] m-[auto]">
+          <div className="flex justify-between  items-center h-[70px]  p-[0px_10px]">
             <div className="">
               <h1 className="font-[700] text-[30px] text-white">
                 Alime <span className="text-red-900">.</span>
               </h1>
             </div>
-            <div className="flex gap-8 text-white font-[400] text-[18px]">
-              {NavbarArr.map(({ id, title, to, arrow }) => {
-                return (
-                  <>
-                    <div className="">
-                      <NavLink key={id} to={to}>
-                        <h1 className=" flex gap-2 transition-all duration-500 hover:text-red-700">
-                          {title}{" "}
-                          <span className="text-red-700 ]">{arrow}</span>
-                        </h1>
-                      </NavLink>
-                    </div>
-                  </>
-                );
-              })}
+            <div className="flex items-center gap-20">
+              <div className="flex gap-8 text-white font-[400] text-[18px]">
+                {NavbarArr.map(({ id, title, to, arrow }) => {
+                  return (
+                    <>
+                      <div className="">
+                        <NavLink key={id} to={to}>
+                          <h1 className=" flex gap-2 transition-all duration-500 hover:text-red-700">
+                            {title}{" "}
+                            <span className="text-red-700 ]">{arrow}</span>
+                          </h1>
+                        </NavLink>
+                      </div>
+                    </>
+                  );
+                })}
+              </div>
+              <div className="">
+                <IoSearchOutline className="text-white text-2xl" />
+              </div>
             </div>
           </div>
-          <div className=""></div>
         </div>
       </div>
     </>

@@ -6,7 +6,6 @@ import Navbar from "./Components/common/Navbar/Index";
 const App = () => {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path="/" Component={Home} />
       </Routes>

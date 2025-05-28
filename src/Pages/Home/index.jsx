@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/common/Navbar/Index";
 import { Link } from "react-router-dom";
+import Header from "../../Components/Header";
 
 const Home = () => {
   const LinkArr = [
@@ -222,6 +223,7 @@ const Home = () => {
   };
   return (
     <>
+      <Header />
       <div className="font-[700] flex gap-10 text-[20px] justify-center mt-[80px]">
         {LinkArr.map(({ id, title }) => {
           return (
