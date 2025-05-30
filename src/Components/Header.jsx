@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div className="bg-[url('/bg.png')] h-[100vh] bg-cover bg-center">
+      <div className="bg-[url('/bg.png')] h-[100vh] w-full bg-cover bg-center">
         <Navbar />
-        <div className="max-w-[75vw] m-[auto]">
+        <div className="md:max-w-[90vw] sm:max-w-[90vw] max-w[100vw] xl:max-w-[75vw] m-[auto]">
           <div className="mt-[80px]">
             <h1 className="text-[#ffe89e] text-[82px] font-[700]">Hello </h1>
             <h1 className="text-[#ffe89e] text-[82px] font-[700]">
