@@ -265,7 +265,7 @@ const Navbar = () => {
                                         className={`{
                                               ${
                                                 ClickDowns
-                                                  ? "bg-green-500"
+                                                  ? "bg-green-600"
                                                   : "bg-blue-950"
                                               } p-[7px_7px] text-white mr-[10px]`}
                                         onClick={() => ClickDown(id)}
