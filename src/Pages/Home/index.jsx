@@ -206,17 +206,18 @@ const Home = () => {
       SetActive(mesaj[0].ImageArr);
     }
   }, []);
+
   const ClickShow = (id) => {
-    console.log(id);
     const newData = LinkArr.find((item) => item.id === id);
     if (newData && newData.ImageArr) {
       SetActive(newData.ImageArr);
     }
   };
+
   return (
     <>
       <Header />
-      <div className="font-[700] flex gap-10 text-[20px] justify-center mt-[80px]">
+      <div className="font-[700] flex gap-10 text-[20px] justify-center mt-[80px] flex-wrap">
         {LinkArr.map(({ id, title }) => {
           return (
             <Link
@@ -230,8 +231,9 @@ const Home = () => {
           );
         })}
       </div>
-      <div className="gird justify-items-center max-w-[85vw] mt-[50px] m-[auto] ">
-        <div className="grid grid-cols-[260px_260px_260px_260px] justify-items-center">
+
+      <div className="grid justify-items-center max-w-[85vw] mt-[50px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[260px_260px_260px] xl:grid-cols-[260px_260px_260px_260px] justify-items-center gap-4">
           {active.map(
             ({ id, src, width, row, col, marginTop, marginRight, height }) => {
               return (
@@ -239,7 +241,14 @@ const Home = () => {
                   key={id}
                   src={src}
                   alt=""
-                  className={`${width} ${row} ${col} ${marginTop} ${height} ${marginRight}`}
+                  className={`w-full h-auto mt-0
+              ${width ? `sm:${width} md:${width}` : ""}
+              ${row ? `sm:${row} md:${row}` : ""}
+              ${col ? `sm:${col} md:${col}` : ""}
+              ${marginTop ? `sm:${marginTop} md:${marginTop}` : ""}
+              ${marginRight ? `sm:${marginRight} md:${marginRight}` : ""}
+              ${height ? `sm:${height} md:${height}` : ""}
+            `}
                 />
               );
             }

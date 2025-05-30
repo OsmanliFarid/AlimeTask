@@ -84,7 +84,7 @@ const Navbar = () => {
             </div>
             <div className=" hidden md:block">
               <div className="flex items-center gap-20">
-                <div className="flex  md:gap-5 text-white font-[400] text-[18px]">
+                <div className="flex relative  md:gap-5 text-white font-[400] text-[18px]">
                   {NavbarArr.map(({ id, title, to, arrow }) => {
                     if (title === "Pages") {
                       return (
@@ -105,7 +105,7 @@ const Navbar = () => {
                           <div
                             className={`${
                               active ? "block" : "hidden"
-                            }  bg-white w-[210px] h-[320px] fixed top-15 left-170 rounded-xl`}
+                            }  bg-white w-[210px] h-[320px] absolute top-15 left-13 rounded-xl`}
                           >
                             {NavbarArr2.map(({ id, title, to, arrow }) => {
                               if (title === "Dropdown") {
@@ -134,7 +134,7 @@ const Navbar = () => {
                                     <div
                                       className={`${
                                         DropActive ? "block" : "hidden"
-                                      } bg-white w-[210px] h-[200px] rounded-[10px] fixed left-222 top-80`}
+                                      } bg-white w-[210px] h-[200px] rounded-[10px] absolute left-52 top-67`}
                                     >
                                       {DropArr.map(({ id, title }) => {
                                         return (
