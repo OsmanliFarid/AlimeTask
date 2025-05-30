@@ -129,14 +129,6 @@ const Home = () => {
           col: "",
           marginTop: "mt-[0px]",
         },
-        {
-          id: 11,
-          src: "https://preview.colorlib.com/theme/alime/img/bg-img/36.jpg.webp",
-          width: "w-[493px]",
-          row: "",
-          col: "col-[3/5]",
-          marginTop: "mt-[0px]",
-        },
       ],
     },
     {
@@ -238,18 +230,20 @@ const Home = () => {
           );
         })}
       </div>
-      <div className="gird justify-items-center max-w-[85vw] mt-[50px] m-[auto]">
+      <div className="gird justify-items-center max-w-[85vw] mt-[50px] m-[auto] ">
         <div className="grid grid-cols-[260px_260px_260px_260px] justify-items-center">
-          {active.map(({ id, src, width, row, col, marginTop, height }) => {
-            return (
-              <img
-                key={id}
-                src={src}
-                alt=""
-                className={`${width} ${row} ${col} ${marginTop} ${height}`}
-              />
-            );
-          })}
+          {active.map(
+            ({ id, src, width, row, col, marginTop, marginRight, height }) => {
+              return (
+                <img
+                  key={id}
+                  src={src}
+                  alt=""
+                  className={`${width} ${row} ${col} ${marginTop} ${height} ${marginRight}`}
+                />
+              );
+            }
+          )}
         </div>
       </div>
     </>
