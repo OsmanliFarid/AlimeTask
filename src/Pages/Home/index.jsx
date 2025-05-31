@@ -171,7 +171,7 @@ const Home = () => {
         })}
       </div>
       <div className="grid justify-items-center max-w-[85vw] mt-[50px] m-[auto] ">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 justify-items-center bg-red-400">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 justify-items-center ">
           {active.map(({ id, src, width, height }) => {
             return <img key={id} src={src} alt="" />;
           })}
