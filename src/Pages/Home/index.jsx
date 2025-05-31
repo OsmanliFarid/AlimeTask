@@ -12,91 +12,68 @@ const Home = () => {
         {
           id: 1,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/3.jpg.webp",
-          width: "w-[231px]",
-          row: "row-[1/2]",
-          col: "",
-          marginTop: "",
+          width: "260px",
+          height: "169px",
         },
         {
           id: 2,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/4.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "",
+          width: "1",
+          height: "4",
         },
         {
           id: 3,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/5.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "",
+          width: "257px",
+          height: "169px",
         },
         {
           id: 4,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/6.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "",
+          width: "257px",
+          height: "289px",
         },
         {
           id: 5,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/7.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[-70px]",
+          width: "260px",
+          height: "290px",
         },
         {
           id: 6,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/9.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[30px]",
+          width: "260px",
+          height: "430px",
         },
         {
           id: 7,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/8.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[-80px]",
+          width: "260px",
+          height: "290px",
         },
         {
           id: 8,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/10.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[30px]",
+          width: "260px",
+          height: "169px",
         },
         {
           id: 9,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/37.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[-200px]",
-          height: "h-[380px]",
+          width: "260px",
+          height: "434px",
         },
         {
           id: 10,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/5.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[30px]",
+          width: "260px",
+          height: "169px",
         },
         {
           id: 11,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/36.jpg.webp",
-          width: "w-[493px]",
-          row: "",
-          col: "col-[3/5]",
-          marginTop: "mt-[-217px]",
+          width: "545px",
+          height: "440px",
         },
       ],
     },
@@ -107,27 +84,14 @@ const Home = () => {
         {
           id: 8,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/10.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[0px]",
         },
         {
           id: 9,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/37.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[0px]",
-          height: "h-[380px]",
         },
         {
           id: 10,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/5.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[0px]",
         },
       ],
     },
@@ -138,26 +102,14 @@ const Home = () => {
         {
           id: 4,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/6.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "",
         },
         {
           id: 5,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/7.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[0px]",
         },
         {
           id: 6,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/9.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "mt-[0px]",
         },
       ],
     },
@@ -168,18 +120,10 @@ const Home = () => {
         {
           id: 1,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/3.jpg.webp",
-          width: "w-[231px]",
-          row: "row-[1/2]",
-          col: "",
-          marginTop: "",
         },
         {
           id: 2,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/4.jpg.webp",
-          width: "w-[231px]",
-          row: "",
-          col: "",
-          marginTop: "",
         },
       ],
     },
@@ -190,10 +134,6 @@ const Home = () => {
         {
           id: 11,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/36.jpg.webp",
-          width: "w-[493px]",
-          row: "",
-          col: "col-[3/5]",
-          marginTop: "mt-[0px]",
         },
       ],
     },
@@ -231,19 +171,10 @@ const Home = () => {
         })}
       </div>
       <div className="grid justify-items-center max-w-[85vw] mt-[50px] m-[auto] ">
-        <div className="grid grid-cols-[260px] md:grid-cols-[260px_260px_260px_260px] justify-items-center">
-          {active.map(
-            ({ id, src, width, row, col, marginTop, marginRight, height }) => {
-              return (
-                <img
-                  key={id}
-                  src={src}
-                  alt=""
-                  className={`${width} ${row} ${col} ${marginTop} ${height} ${marginRight}`}
-                />
-              );
-            }
-          )}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 justify-items-center bg-red-400">
+          {active.map(({ id, src, width, height }) => {
+            return <img key={id} src={src} alt="" />;
+          })}
         </div>
       </div>
     </>
