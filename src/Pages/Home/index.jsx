@@ -10,70 +10,90 @@ const Home = () => {
       title: "All",
       ImageArr: [
         {
-          id: 1,
+          col_start: "col-start-1",
+          col_end: "col-end-2",
+          row_start: "row-start-1",
+          row_end: "row-end-2",
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/3.jpg.webp",
-          width: "260px",
-          height: "169px",
+          id: 1,
         },
         {
-          id: 2,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/4.jpg.webp",
-          width: "1",
-          height: "4",
+          col_start: "col-start-2",
+          col_end: "col-end-3",
+          row_start: "row-start-1",
+          row_end: "row-end-3",
+          id: 2,
         },
         {
+          col_start: "col-start-3",
+          col_end: "col-end-4",
           id: 3,
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/5.jpg.webp",
-          width: "257px",
-          height: "169px",
         },
         {
-          id: 4,
+          col_start: "col-start-4",
+          col_end: "col-end-5",
+          row_start: "row-start-1",
+          row_end: "row-end-3",
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/6.jpg.webp",
-          width: "257px",
-          height: "289px",
+          id: 4,
         },
         {
-          id: 5,
+          col_start: "col-start-1",
+          col_end: "col-end-2",
+          row_start: "row-start-2",
+          row_end: "row-end-4",
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/7.jpg.webp",
-          width: "260px",
-          height: "290px",
+          id: 5,
         },
         {
-          id: 6,
+          col_start: "col-start-2",
+          col_end: "col-end-3",
+          row_start: "row-start-3",
+          row_end: "row-end-6",
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/9.jpg.webp",
-          width: "260px",
-          height: "430px",
+          id: 6,
         },
         {
-          id: 7,
+          col_start: "col-start-3",
+          col_end: "col-end-4",
+          row_start: "row-start-2",
+          row_end: "row-end-4",
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/8.jpg.webp",
-          width: "260px",
-          height: "290px",
+          id: 7,
         },
         {
-          id: 8,
+          col_start: "col-start-4",
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/10.jpg.webp",
-          width: "260px",
-          height: "169px",
+          col_end: "col-end-5",
+          row_start: "row-start-3",
+          row_end: "row-end-4",
+          id: 8,
         },
         {
-          id: 9,
+          col_start: "col-start-1",
+          col_end: "col-end-2",
+          row_start: "row-start-4",
+          row_end: "row-end-7",
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/37.jpg.webp",
-          width: "260px",
-          height: "434px",
+          id: 9,
         },
         {
-          id: 10,
+          col_start: "col-start-2",
+          col_end: "col-end-3",
+          row_start: "row-start-6",
+          row_end: "row-end-7",
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/5.jpg.webp",
-          width: "260px",
-          height: "169px",
+          id: 10,
         },
         {
-          id: 11,
+          col_start: "col-start-3",
+          col_end: "col-end-5",
+          row_start: "row-start-4",
+          row_end: "row-end-7",
           src: "https://preview.colorlib.com/theme/alime/img/bg-img/36.jpg.webp",
-          width: "545px",
-          height: "440px",
+          id: 11,
         },
       ],
     },
@@ -146,35 +166,41 @@ const Home = () => {
       SetActive(mesaj[0].ImageArr);
     }
   }, []);
+
   const ClickShow = (id) => {
-    console.log(id);
     const newData = LinkArr.find((item) => item.id === id);
     if (newData && newData.ImageArr) {
       SetActive(newData.ImageArr);
     }
   };
+
   return (
     <>
       <Header />
       <div className="font-[700] flex gap-10 text-[20px] justify-center mt-[80px]">
-        {LinkArr.map(({ id, title }) => {
-          return (
-            <Link
-              onClick={() => ClickShow(id)}
-              key={id}
-              className="relative font-bold text-[20px] group"
-            >
-              {title}
-              <span className="absolute right-0 top-8 h-[5px] w-0 bg-red-700 transition-all duration-500 group-hover:w-full"></span>
-            </Link>
-          );
-        })}
+        {LinkArr.map(({ id, title }) => (
+          <Link
+            onClick={() => ClickShow(id)}
+            key={id}
+            className="relative font-bold text-[20px] group cursor-pointer"
+          >
+            {title}
+            <span className="absolute right-0 top-8 h-[5px] w-0 bg-red-700 transition-all duration-500 group-hover:w-full"></span>
+          </Link>
+        ))}
       </div>
-      <div className="grid justify-items-center max-w-[85vw] mt-[50px] m-[auto] ">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 justify-items-center ">
-          {active.map(({ id, src, width, height }) => {
-            return <img key={id} src={src} alt="" />;
-          })}
+      <div className="grid justify-items-center max-w-[85vw] mt-[50px] m-[auto]">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {active.map(({ col_start, col_end, row_end, row_start, src, id }) => (
+            <div
+              key={id}
+              className={`w-full text-white ${col_start ?? ""} ${
+                row_start ?? ""
+              } ${row_end ?? ""} ${col_end ?? ""}`}
+            >
+              <img src={src} alt="" className="w-full h-auto object-cover" />
+            </div>
+          ))}
         </div>
       </div>
     </>
