@@ -1,0 +1,68 @@
+ImageArr: [
+        {
+          id: 1,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/3.jpg.webp",
+          width: "260px",
+          height: "169px",
+        },
+        {
+          id: 2,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/4.jpg.webp",
+          width: "1",
+          height: "4",
+        },
+        {
+          id: 3,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/5.jpg.webp",
+          width: "257px",
+          height: "169px",
+        },
+        {
+          id: 4,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/6.jpg.webp",
+          width: "257px",
+          height: "289px",
+        },
+        {
+          id: 5,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/7.jpg.webp",
+          width: "260px",
+          height: "290px",
+        },
+        {
+          id: 6,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/9.jpg.webp",
+          width: "260px",
+          height: "430px",
+        },
+        {
+          id: 7,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/8.jpg.webp",
+          width: "260px",
+          height: "290px",
+        },
+        {
+          id: 8,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/10.jpg.webp",
+          width: "260px",
+          height: "169px",
+        },
+        {
+          id: 9,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/37.jpg.webp",
+          width: "260px",
+          height: "434px",
+        },
+        {
+          id: 10,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/5.jpg.webp",
+          width: "260px",
+          height: "169px",
+        },
+        {
+          id: 11,
+          src: "https://preview.colorlib.com/theme/alime/img/bg-img/36.jpg.webp",
+          width: "545px",
+          height: "440px",
+        },
+      ],
