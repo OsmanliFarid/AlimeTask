@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/common/Navbar/Index";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
-
+import { motion } from "framer-motion";
 const Home = () => {
   const LinkArr = [
     {
@@ -189,17 +189,21 @@ const Home = () => {
           </Link>
         ))}
       </div>
-      <div className="grid justify-items-center max-w-[85vw] mt-[50px] m-[auto]">
+      <div className="grid justify-items-center max-w-[75vw] mt-[50px] m-[auto]">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {active.map(({ col_start, col_end, row_end, row_start, src, id }) => (
-            <div
+            <motion.div
               key={id}
               className={`w-full text-white ${col_start ?? ""} ${
                 row_start ?? ""
               } ${row_end ?? ""} ${col_end ?? ""}`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: id * 0.1 }}
+              whileHover={{ scale: 1.05 }}
             >
               <img src={src} alt="" className="w-full h-auto object-cover" />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
