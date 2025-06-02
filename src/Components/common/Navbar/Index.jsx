@@ -10,12 +10,11 @@ import { IoMdClose } from "react-icons/io";
 const Navbar = () => {
   let NavbarArr = [
     { id: 1, title: "Home", to: "/", arrow: "" },
-    { id: 2, title: "Pages", to: "/", arrow: <IoIosArrowDown /> },
+    { id: 2, title: "Pages", to: "#", arrow: <IoIosArrowDown /> },
     { id: 3, title: "About", to: "/about", arrow: "" },
-    { id: 4, title: "Galery", to: "/", arrow: "" },
-    { id: 5, title: "Blog", to: "/", arrow: "" },
-    { id: 6, title: "Contact", to: "/", arrow: "" },
-    { id: 7, title: "About", to: "/", arrow: "" },
+    { id: 4, title: "Galery", to: "/gallery", arrow: "" },
+    { id: 5, title: "Blog", to: "#", arrow: "" },
+    { id: 6, title: "Contact", to: "/contact", arrow: "" },
   ];
   let NavbarArr2 = [
     { id: 1, title: "Home", to: "/", arrow: "" },
