@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
   let NavbarArr2 = [
     { id: 1, title: "Home", to: "/", arrow: "" },
-    { id: 3, title: "About", to: "/about", arrow: "" },
+    { id: 3, title: "About", to: "/", arrow: "" },
     { id: 4, title: "Galery", to: "/", arrow: "" },
     { id: 5, title: "Blog", to: "/", arrow: "" },
     { id: 6, title: "Blog Details", to: "/", arrow: "" },
@@ -111,7 +111,10 @@ const Navbar = () => {
                                 return (
                                   <div key={id}>
                                     <div className="mt-[3px] ">
-                                      <Link className="flex text-[16px]  hover:text-red-500 transition-all duration-500 font-[500] p-[15px_0px_0px_30px] text-black">
+                                      <Link
+                                        to={to}
+                                        className="flex text-[16px]  hover:text-red-500 transition-all duration-500 font-[500] p-[15px_0px_0px_30px] text-black"
+                                      >
                                         <div className="flex gap-1  ">
                                           <span>-</span>
                                           <div
@@ -162,6 +165,7 @@ const Navbar = () => {
                                   <>
                                     <div className="mt-[3px] ">
                                       <Link
+                                        to={to}
                                         className="flex text-[16px]  hover:text-red-500 transition-all duration-500 font-[500] p-[15px_0px_0px_30px] text-black"
                                         key={id}
                                       >
