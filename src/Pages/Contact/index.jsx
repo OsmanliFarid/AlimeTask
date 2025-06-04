@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../Components/common/Navbar/Index";
 import { Link } from "react-router-dom";
+import Footer from "../../Components/common/Footer/Index";
 
 const Contact = () => {
   return (
@@ -52,6 +53,7 @@ const Contact = () => {
           ></iframe>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
