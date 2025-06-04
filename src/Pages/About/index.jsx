@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { TbMovie } from "react-icons/tb";
 import { FaPencilAlt, FaCamera } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Footer from "../../Components/common/Footer/Index";
 
 const cardVariants = {
   offscreen: { y: 50, opacity: 0 },
@@ -122,7 +123,6 @@ const About = () => {
       <div className="md:max-w-[90vw] sm:max-w-[90vw] max-w-[100vw] xl:max-w-[75vw] m-auto">
         <h1 className="font-bold text-4xl text-center mt-28">Our Team</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 mt-[30px] gap-y-4 md:gap-y-0 justify-items-center md:justify-items-start">
-          {/* Team member */}
           <motion.div
             className="w-[255px] h-[389px] shadow-xl bg-white group cursor-pointer 
                           hover:bg-[#fc6060] transition-colors duration-300"
@@ -224,6 +224,7 @@ const About = () => {
           </motion.div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
