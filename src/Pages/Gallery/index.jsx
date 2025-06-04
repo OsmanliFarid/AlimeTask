@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
 import { motion } from "framer-motion";
 import { img } from "framer-motion/m";
+import Footer from "../../Components/common/Footer/Index";
 const Gallery = () => {
   const LinkArr = [
     {
@@ -209,6 +210,7 @@ const Gallery = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
