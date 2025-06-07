@@ -231,7 +231,6 @@ const Navbar = () => {
           >
             <div className="flex justify-end p-4">
               <IoMdClose className="text-[40px]" onClick={CloseBars} />
-              <h1>s</h1>
             </div>
             <div className="flex items-start h-full">
               <div className="bg-[#e4e4e4] w-[100%] h-auto pb-[20px] mt-5">
