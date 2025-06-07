@@ -7,6 +7,7 @@ const Blog = () => {
       id: 1,
       img: "https://preview.colorlib.com/theme/alime/img/bg-img/51.jpg.webp",
       grid_col_row: "md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-3",
+      rotate: "hover:rotate-[90deg]",
     },
     {
       id: 2,
@@ -52,8 +53,16 @@ const Blog = () => {
       </div>
       <div className="md:max-w-[90vw] sm:max-w-[90vw] max-w-[100vw] xl:max-w-[75vw] m-auto">
         <div className="grid grid-cols-1 gap-3 mt-[90px] md:grid-cols-4">
-          {newarr.map(({ id, img, grid_col_row }) => {
-            return <img className={grid_col_row} key={id} src={img} alt="" />;
+          {newarr.map(({ id, img, grid_col_row, rotate }) => {
+            return (
+              <div className={`${grid_col_row} overflow-hidden`}>
+                <img
+                  className={`w-full md:w-auto object-cover transition-transform duration-300 transform hover:scale-105`}
+                  src={img}
+                  alt=""
+                />
+              </div>
+            );
           })}
         </div>
       </div>
