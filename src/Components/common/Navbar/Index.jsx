@@ -13,7 +13,7 @@ const Navbar = () => {
     { id: 2, title: "Pages", to: "#", arrow: <IoIosArrowDown /> },
     { id: 3, title: "About", to: "/about", arrow: "" },
     { id: 4, title: "Galery", to: "/gallery", arrow: "" },
-    { id: 5, title: "Blog", to: "#", arrow: "" },
+    { id: 5, title: "Blog", to: "/blog", arrow: "" },
     { id: 6, title: "Contact", to: "/contact", arrow: "" },
   ];
   let NavbarArr2 = [
